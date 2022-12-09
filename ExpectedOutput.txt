@@ -1,0 +1,53 @@
+(Setup) QSPI Initialising ...
+(QSPI_Initialise) nrfx_qspi_init successful
+(QSPI_Initialise (Before QSIP_Configure_Memory)) QSPI is busy/idle ... Result = 0
+(QSPI_Initialise (Before QSIP_Configure_Memory)) QSPI Status flag = 0xA (from NRF_QSPI) or 0xA (*QSPI_Status_Ptr)
+(QSIP_Configure_Memory) QSPI is busy/idle ... Result = 0
+(QSIP_Configure_Memory) QSPI Status flag = 0x300000A (from NRF_QSPI) or 0x300000A (*QSPI_Status_Ptr)
+(QSPI_Initialise) Wait for QSPI to be ready ...
+*QSPI_Status_Ptr & 8 = 8, *QSPI_Status_Ptr & 0x01000000 = 1000000000000000000000000
+(QSPI_WaitForReady) QSPI is busy/idle ... Result = 0
+(QSPI_WaitForReady) QSPI Status flag = 0x300000A (from NRF_QSPI) or 0x300000A (*QSPI_Status_Ptr)
+*QSPI_Status_Ptr & 8 = 8, *QSPI_Status_Ptr & 0x01000000 = 1000000000000000000000000
+(QSPI_WaitForReady) QSPI is busy/idle ... Result = 0
+(QSPI_WaitForReady) QSPI Status flag = 0x300000A (from NRF_QSPI) or 0x300000A (*QSPI_Status_Ptr)
+*QSPI_Status_Ptr & 8 = 8, *QSPI_Status_Ptr & 0x01000000 = 1000000000000000000000000
+(QSPI_WaitForReady) QSPI is busy/idle ... Result = 0
+(QSPI_WaitForReady) QSPI Status flag = 0x300000A (from NRF_QSPI) or 0x300000A (*QSPI_Status_Ptr)
+*QSPI_Status_Ptr & 8 = 8, *QSPI_Status_Ptr & 0x01000000 = 1000000000000000000000000
+(QSPI_WaitForReady) QSPI is busy/idle ... Result = 0
+(QSPI_WaitForReady) QSPI Status flag = 0x300000A (from NRF_QSPI) or 0x300000A (*QSPI_Status_Ptr)
+*QSPI_Status_Ptr & 8 = 8, *QSPI_Status_Ptr & 0x01000000 = 1000000000000000000000000
+(QSPI_WaitForReady) QSPI is busy/idle ... Result = 0
+(QSPI_WaitForReady) QSPI Status flag = 0x300000A (from NRF_QSPI) or 0x300000A (*QSPI_Status_Ptr)
+*QSPI_Status_Ptr & 8 = 8, *QSPI_Status_Ptr & 0x01000000 = 1000000000000000000000000
+(QSPI_WaitForReady) QSPI is busy/idle ... Result = 0
+(QSPI_WaitForReady) QSPI Status flag = 0xA (from NRF_QSPI) or 0xA (*QSPI_Status_Ptr)
+(QSPI_Initialise) QSPI is ready
+(Setup) QSPI initialised and ready
+(Setup (After initialise)) QSPI is busy/idle ... Result = 0
+(Setup (After initialise)) QSPI Status flag = 0xA (from NRF_QSPI) or 0xA (*QSPI_Status_Ptr)
+(Setup) QSPI is about to be read and then erased. Current busy state is = 0
+(Setup (Before read)) QSPI is busy/idle ... Result = 0
+(Setup (Before read)) QSPI Status flag = 0xA (from NRF_QSPI) or 0xA (*QSPI_Status_Ptr)
+(Setup) QSPI took 4ms to read 64Kb ... Read result = 0
+(Setup (After read)) QSPI is busy/idle ... Result = 0
+(Setup (After read)) QSPI Status flag = 0xA (from NRF_QSPI) or 0xA (*QSPI_Status_Ptr)
+Data : 0x0 0x2 0x4 0x6 0x8 0xA 0xC 0xE 0x10 0x12
+QSPI Erasing 64Kb of memory
+(QSPI_Erase) Erasing memory
+(QSPI_Erase (Waiting Loop Breakout)) QSPI is busy/idle ... Result = 0
+(QSPI_Erase (Waiting Loop Breakout)) QSPI Status flag = 0xA (from NRF_QSPI) or 0xA (*QSPI_Status_Ptr)
+(QSPI_Erase (Finished Waiting)) QSPI is busy/idle ... Result = 0
+(QSPI_Erase (Finished Waiting)) QSPI Status flag = 0xA (from NRF_QSPI) or 0xA (*QSPI_Status_Ptr)
+(QSPI_Initialise_Page) QSPI took 1ms to erase a 64Kb page
+(Setup) QSPI read after erase
+(Setup) QSPI took 15ms to read 64Kb ... Read result = 0
+Data : 0xFFFF 0xFFFF 0xFFFF 0xFFFF 0xFFFF 0xFFFF 0xFFFF 0xFFFF 0xFFFF 0xFFFF
+(Setup) Just before QSPI write
+(Setup) QSPI took 352ms to write 64Kb ... Write result = 0
+(Setup) Just before QSPI read
+(Setup) QSPI took 4ms to read 64Kb ... Read result = 0
+Data : 0x0 0x2 0x4 0x6 0x8 0xA 0xC 0xE 0x10 0x12
+(Setup) QSPI is busy/idle ... Result = 0
+(Setup) QSPI Status flag = 0xA (from NRF_QSPI) or 0xA (*QSPI_Status_Ptr)
