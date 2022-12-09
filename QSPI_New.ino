@@ -153,7 +153,7 @@ static nrfx_err_t QSPI_Initialise() { // Initialises the QSPI and NRF LOG
   if (Debug_On) {
     Serial.println("(QSPI_Initialise) Wait for QSPI to be ready ...");
   }
-  NRF_QSPI->EVENTS_READY = 0;
+  NRF_QSPI->TASKS_ACTIVATE = 1;
   QSPI_WaitForReady();
   if (Debug_On) {
     Serial.println("(QSPI_Initialise) QSPI is ready");
